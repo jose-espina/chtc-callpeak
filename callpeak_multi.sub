@@ -7,7 +7,7 @@
 Requirements = (Target.hasCHTCStaging == true)
 
 # Provide HTCondor with the name of the Docker container
-container_image = docker://jespina/chtc-callpeak:dev
+container_image = file:///staging/jespina/containers/chtc-callpeak.sif 
 universe = container
 
 # Specify executable and arguments
