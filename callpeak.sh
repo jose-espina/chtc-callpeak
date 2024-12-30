@@ -52,9 +52,9 @@ elif [ "$setting" == "narrow" ]; then
 fi
 
 # filter out blacklist regions
-bedtools intersect -a output/${samplename}.${fileext} \
+bedtools intersect -a output/${samplename}_peaks.${fileext} \
 	-b input/$blacklist -v \
-	> output/${samplename}.bf.${fileext}
+	> output/${samplename}_peaks_bf.${fileext}
 
 # tar macs2 outputs and move to staging
 cd output
